@@ -24,8 +24,9 @@ app.use(express.json());
 
 //Get All products from the Database
 app.get("/allproduct", async (request, response) => {
-	const result = await Products.find({});
-	response.json(result);
+	// const result = await Products.find({});
+	// response.json(result);
+	response.json({"abc":"dasodiasdn"});
 });
 
 //Get All Categories from Database
