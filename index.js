@@ -1,5 +1,5 @@
 import express from "express";
-import cors from "cors";
+// import cors from "cors";
 import connectDB from "./connection.js";
 import Products from "./model/productSchema.js";
 import AllCategories from "./model/categorySchema.js";
@@ -9,18 +9,18 @@ import bcrypt from "bcrypt";
 const app = express();
 const port = 8080;
 
-const myCors = {
-	origin: "https://harsh-ecommerce.vercel.app",
-	methods: "GET, POST",
-	credentials: true, // enable passing of cookies, authentication headers, etc.
-};
+// const myCors = {
+// 	origin: "https://harsh-ecommerce.vercel.app",
+// 	methods: "GET, POST",
+// 	credentials: true, // enable passing of cookies, authentication headers, etc.
+// };
 
 //Connect with the MongoDB Database
 connectDB();
 
 //Middlewares
 app.use(express.json());
-app.use(cors(myCors));
+// app.use(cors(myCors));
 
 //Get All products from the Database
 app.get("/allproduct", async (request, response) => {
