@@ -1,9 +1,9 @@
 import express from "express";
 // import cors from "cors";
 import connectDB from "./connection.js";
-import Products from "./model/productSchema.js";
-import AllCategories from "./model/categorySchema.js";
-import Users from "./model/userSchema.js";
+// import Products from "./model/productSchema.js";
+// import AllCategories from "./model/categorySchema.js";
+// import Users from "./model/userSchema.js";
 import bcrypt from "bcrypt";
 
 const app = express();
